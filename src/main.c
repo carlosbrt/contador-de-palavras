@@ -10,13 +10,18 @@
 int main() {
 
   char c;
+  int i;
 
   c = 1;
+  i = 1;
 
   while (c != '\n') {
     scanf("%c", &c);
+    if (c == ' '){
+      i++;
+    }	
   }
 
-  printf("1\n");
+  printf("%d \n", i);
   return 0;
 }
